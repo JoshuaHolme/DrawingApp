@@ -10,8 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var placedShapes: [Shape]
-    @State private var selectedId: Int = 0
-    @State private var showPopover:Bool = false
+    @State private var showShapePopover: Bool = false
     
     var body: some View {
         HStack(alignment: .top) {
@@ -29,24 +28,15 @@ struct ContentView: View {
                         .frame(width: 40)
                 }
                 .onTapGesture {
-                    self.showPopover = true
+                    self.showShapePopover = true
                 }.popover(
-                    isPresented: self.$showPopover,
+                    isPresented: self.$showShapePopover,
                     arrowEdge: .leading
                 ) {
                     VStack(alignment: .leading) {
-                        PopoverItemView(imageName: "Triangle", optionName: "Triangle")
-                            .onTapGesture {
-                                self.addShape(shape: "Triangle")
-                            }
-                        PopoverItemView(imageName: "Square", optionName: "Square")
-                            .onTapGesture {
-                                self.addShape(shape: "Square")
-                            }
-                        PopoverItemView(imageName: "Circle", optionName: "Circle")
-                            .onTapGesture {
-                                self.addShape(shape: "Circle")
-                            }
+                        PopoverShapeView(imageName: "Triangle", optionName: "Triangle", placedShapes: self.$placedShapes)
+                        PopoverShapeView(imageName: "Square", optionName: "Square", placedShapes: self.$placedShapes)
+                        PopoverShapeView(imageName: "Circle", optionName: "Circle", placedShapes: self.$placedShapes)
                     }
                     .padding(.all)
                 }
@@ -68,23 +58,6 @@ struct ContentView: View {
             }
             .frame(width: 300)
         }
-    }
-    
-    private func addShape(shape: String) {
-        
-        var path: Path
-        switch shape {
-        case "Triangle":
-            path = Path.triangle
-        case "Square":
-            path = Path.square
-        case "Circle":
-            path = Path.circle
-        default:
-            path = Path.triangle
-        }
-        
-        placedShapes.append(Shape(id: placedShapes.count, name: "Shape \(self.placedShapes.count + 1)", previewImageName: shape, path: path, isHidden: false))
     }
 }
 

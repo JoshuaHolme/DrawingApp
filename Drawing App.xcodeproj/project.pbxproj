@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		693AECBB2450BF6300731AE2 /* PopoverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AECBA2450BF6300731AE2 /* PopoverItemView.swift */; };
+		693AECBB2450BF6300731AE2 /* PopoverShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AECBA2450BF6300731AE2 /* PopoverShapeView.swift */; };
 		693AECBD2450C34E00731AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693AECBC2450C34E00731AE2 /* Assets.xcassets */; };
+		693AECC52450D43C00731AE2 /* PopoverNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693AECC42450D43C00731AE2 /* PopoverNameView.swift */; };
 		69E9FF002450788900B7E216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FEFF2450788900B7E216 /* AppDelegate.swift */; };
 		69E9FF022450788900B7E216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF012450788900B7E216 /* SceneDelegate.swift */; };
 		69E9FF042450788900B7E216 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF032450788900B7E216 /* ContentView.swift */; };
@@ -39,8 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		693AECBA2450BF6300731AE2 /* PopoverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverItemView.swift; sourceTree = "<group>"; };
+		693AECBA2450BF6300731AE2 /* PopoverShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverShapeView.swift; sourceTree = "<group>"; };
 		693AECBC2450C34E00731AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		693AECC42450D43C00731AE2 /* PopoverNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverNameView.swift; sourceTree = "<group>"; };
 		69E9FEFC2450788900B7E216 /* Drawing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drawing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E9FEFF2450788900B7E216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69E9FF012450788900B7E216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,7 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				69E9FF032450788900B7E216 /* ContentView.swift */,
-				693AECBA2450BF6300731AE2 /* PopoverItemView.swift */,
+				693AECBA2450BF6300731AE2 /* PopoverShapeView.swift */,
+				693AECC42450D43C00731AE2 /* PopoverNameView.swift */,
 				69E9FF3324507D9F00B7E216 /* ShapeLayerItemView.swift */,
 			);
 			path = View;
@@ -299,9 +302,10 @@
 				69E9FF002450788900B7E216 /* AppDelegate.swift in Sources */,
 				69E9FF022450788900B7E216 /* SceneDelegate.swift in Sources */,
 				69E9FF042450788900B7E216 /* ContentView.swift in Sources */,
-				693AECBB2450BF6300731AE2 /* PopoverItemView.swift in Sources */,
+				693AECBB2450BF6300731AE2 /* PopoverShapeView.swift in Sources */,
 				69E9FF3424507D9F00B7E216 /* ShapeLayerItemView.swift in Sources */,
 				69E9FF422450A8A300B7E216 /* PathExtension.swift in Sources */,
+				693AECC52450D43C00731AE2 /* PopoverNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
