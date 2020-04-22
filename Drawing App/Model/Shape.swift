@@ -12,4 +12,5 @@ struct Shape: Identifiable {
     var id: Int
     var name: String
     var previewImageName: String
+    var isHidden: Bool
 }

@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct ShapeLayerItemView: View {
-    var shape: Shape
+    @State var shape: Shape
+    @Binding var placedShapes: [Shape]
+    
     var body: some View {
         HStack {
             Image("\(shape.previewImageName)")
@@ -19,16 +21,32 @@ struct ShapeLayerItemView: View {
             Spacer()
             Text("\(shape.name)")
             Spacer()
-            Rectangle()
-                .fill(Color.green)
+            Image(shape.isHidden ? "unselectedGlyph" : "selectedGlyph")
+                .resizable()
                 .aspectRatio(1, contentMode: .fit)
                 .frame(width: 50)
+                .onTapGesture {
+                    for i in 0 ... self.placedShapes.count - 1
+                    {
+                        if self.placedShapes[i].id == self.shape.id
+                        {
+                            if self.placedShapes[i].isHidden {
+                                self.placedShapes[i].isHidden = false
+                                self.shape.isHidden = false
+                            }
+                            else {
+                                self.placedShapes[i].isHidden = true
+                                self.shape.isHidden = true
+                            }
+                        }
+                    }
+            }
         }
     }
 }
 
-struct ShapeLayerItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        ShapeLayerItemView(shape: Shape(id: 1, name: "Shape 1", previewImageName: "unselectedGlyph"))
-    }
-}
+//struct ShapeLayerItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ShapeLayerItemView(shape: Shape(id: 1, name: "Shape 1", previewImageName: "triangle", isHidden: false), placedShapes: <#Binding<[Shape]>#>)
+//    }
+//}
