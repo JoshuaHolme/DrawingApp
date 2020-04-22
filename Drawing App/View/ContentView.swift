@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var placedShapes: [Shape]
+    @State var selectedShapeID : Int = -1
     @State private var showShapePopover: Bool = false
     
     var body: some View {
@@ -54,7 +55,7 @@ struct ContentView: View {
                 }
             }
             List(placedShapes) { item in
-                ShapeLayerItemView(shape: item, placedShapes: self.$placedShapes)
+                ShapeLayerItemView(shape: item, placedShapes: self.$placedShapes, selectedShapeID: self.$selectedShapeID)
             }
             .frame(width: 300)
         }
