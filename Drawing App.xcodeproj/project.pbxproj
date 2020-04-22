@@ -99,9 +99,10 @@
 		69E9FEFE2450788900B7E216 /* Drawing App */ = {
 			isa = PBXGroup;
 			children = (
+				69E9FF312450796600B7E216 /* Model */,
+				69E9FF3224507A7D00B7E216 /* View */,
 				69E9FEFF2450788900B7E216 /* AppDelegate.swift */,
 				69E9FF012450788900B7E216 /* SceneDelegate.swift */,
-				69E9FF032450788900B7E216 /* ContentView.swift */,
 				69E9FF052450788B00B7E216 /* Assets.xcassets */,
 				69E9FF0A2450788B00B7E216 /* LaunchScreen.storyboard */,
 				69E9FF0D2450788B00B7E216 /* Info.plist */,
@@ -134,6 +135,21 @@
 				69E9FF232450788B00B7E216 /* Info.plist */,
 			);
 			path = "Drawing AppUITests";
+			sourceTree = "<group>";
+		};
+		69E9FF312450796600B7E216 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69E9FF3224507A7D00B7E216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69E9FF032450788900B7E216 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
