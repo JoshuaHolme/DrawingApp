@@ -24,7 +24,7 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                 }
                 .onTapGesture {
-                    self.addShape(shape: Shape(id: self.placedShapes.count, name: "Test Custom Shape 1", previewImageName: "triangle", path: Path.square, isHidden: false))
+                    self.addShape(shape: Shape(id: self.placedShapes.count, name: "Test Custom Shape 3", previewImageName: "triangle", path: Path.triangle, isHidden: false))
                 }
             }
             .padding(.leading, 8)
