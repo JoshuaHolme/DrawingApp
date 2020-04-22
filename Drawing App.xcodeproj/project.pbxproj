@@ -17,7 +17,7 @@
 		69E9FF222450788B00B7E216 /* Drawing_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF212450788B00B7E216 /* Drawing_AppUITests.swift */; };
 		69E9FF3424507D9F00B7E216 /* ShapeLayerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF3324507D9F00B7E216 /* ShapeLayerItemView.swift */; };
 		69E9FF36245081DF00B7E216 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF35245081DF00B7E216 /* Shape.swift */; };
-		69E9FF38245085BB00B7E216 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF37245085BB00B7E216 /* TestMainView.swift */; };
+		69E9FF422450A8A300B7E216 /* PathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E9FF412450A8A300B7E216 /* PathExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		69E9FF232450788B00B7E216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E9FF3324507D9F00B7E216 /* ShapeLayerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLayerItemView.swift; sourceTree = "<group>"; };
 		69E9FF35245081DF00B7E216 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		69E9FF37245085BB00B7E216 /* TestMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMainView.swift; sourceTree = "<group>"; };
+		69E9FF412450A8A300B7E216 /* PathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PathExtension.swift; path = "Drawing App/PathExtension.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 			children = (
 				69E9FF312450796600B7E216 /* Model */,
 				69E9FF3224507A7D00B7E216 /* View */,
+				69E9FF412450A8A300B7E216 /* PathExtension.swift */,
 				69E9FEFF2450788900B7E216 /* AppDelegate.swift */,
 				69E9FF012450788900B7E216 /* SceneDelegate.swift */,
 				69E9FF052450788B00B7E216 /* Assets.xcassets */,
@@ -155,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				69E9FF032450788900B7E216 /* ContentView.swift */,
-				69E9FF37245085BB00B7E216 /* TestMainView.swift */,
 				69E9FF3324507D9F00B7E216 /* ShapeLayerItemView.swift */,
 			);
 			path = View;
@@ -297,7 +297,7 @@
 				69E9FF022450788900B7E216 /* SceneDelegate.swift in Sources */,
 				69E9FF042450788900B7E216 /* ContentView.swift in Sources */,
 				69E9FF3424507D9F00B7E216 /* ShapeLayerItemView.swift in Sources */,
-				69E9FF38245085BB00B7E216 /* TestMainView.swift in Sources */,
+				69E9FF422450A8A300B7E216 /* PathExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

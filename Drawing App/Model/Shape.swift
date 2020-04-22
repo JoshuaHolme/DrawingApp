@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Shape: Identifiable {
     var id: Int
     var name: String
     var previewImageName: String
+    var path: Path
     var isHidden: Bool
 }
