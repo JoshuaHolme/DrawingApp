@@ -37,16 +37,16 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         PopoverItemView(imageName: "Triangle", optionName: "Triangle")
                             .onTapGesture {
-                                self.addShape(shape: Shape(id: self.placedShapes.count, name: "Shape \(self.placedShapes.count + 1)", previewImageName: "Triangle", path: Path.triangle, isHidden: false))
+                                self.addShape(shape: "Triangle")
                             }
                         PopoverItemView(imageName: "Square", optionName: "Square")
                             .onTapGesture {
-                                self.addShape(shape: Shape(id: self.placedShapes.count, name: "Shape \(self.placedShapes.count + 1)", previewImageName: "Square", path: Path.square, isHidden: false))
+                                self.addShape(shape: "Square")
                             }
                         PopoverItemView(imageName: "Circle", optionName: "Circle")
-                        .onTapGesture {
-                            self.addShape(shape: Shape(id: self.placedShapes.count, name: "Shape \(self.placedShapes.count + 1)", previewImageName: "Circle", path: Path.circle, isHidden: false))
-                        }
+                            .onTapGesture {
+                                self.addShape(shape: "Circle")
+                            }
                     }
                     .padding(.all)
                 }
@@ -70,10 +70,24 @@ struct ContentView: View {
         }
     }
     
-    private func addShape(shape: Shape) {
-        placedShapes.append(shape)
+    private func addShape(shape: String) {
+        
+        var path: Path
+        switch shape {
+        case "Triangle":
+            path = Path.triangle
+        case "Square":
+            path = Path.square
+        case "Circle":
+            path = Path.circle
+        default:
+            path = Path.triangle
+        }
+        
+        placedShapes.append(Shape(id: placedShapes.count, name: "Shape \(self.placedShapes.count + 1)", previewImageName: shape, path: path, isHidden: false))
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var testShapes: [Shape] = [Shape(id: 1, name: "Shape 1", previewImageName: "triangle", path: Path.square, isHidden: false), Shape(id: 2, name: "Shape 2", previewImageName: "triangle", path: Path.square, isHidden: false), Shape(id: 3, name: "Shape 3", previewImageName: "triangle", path: Path.square, isHidden: false)]
     
