@@ -10,28 +10,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            ZStack {
-                Rectangle()
-                    .fill(Color.red)
-                    .frame(width: 100)
-                Text("Control\nArea")
-                    .foregroundColor(Color.white)
+        HStack(alignment: .top) {
+            VStack {
+                ZStack {
+                    Rectangle()
+                        .fill(Color.orange)
+                        .aspectRatio(1, contentMode: .fit)
+                        .frame(width: 60)
+                    Text("Add\nShape")
+                        .foregroundColor(Color.white)
+                }
             }
+            .padding(.leading, 8)
+            .frame(width: 75)
             ZStack {
                 Rectangle()
                     .fill(Color.black)
                 Text("Artboard")
                     .foregroundColor(Color.white)
             }
-//            ZStack {
-//                Rectangle()
-//                    .fill(Color.blue)
-//                    .frame(width: 300)
-//                Text("Layer Browser")
-//                    .foregroundColor(Color.white)
-//            }
-            List{
+            List {
                 ShapeLayerItemView()
                 ShapeLayerItemView()
                 ShapeLayerItemView()
