@@ -58,7 +58,7 @@
 		69E9FF232450788B00B7E216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69E9FF3324507D9F00B7E216 /* ShapeLayerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeLayerItemView.swift; sourceTree = "<group>"; };
 		69E9FF35245081DF00B7E216 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		69E9FF412450A8A300B7E216 /* PathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PathExtension.swift; path = "Drawing App/PathExtension.swift"; sourceTree = SOURCE_ROOT; };
+		69E9FF412450A8A300B7E216 /* PathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PathExtension.swift; path = "Drawing App/Utilities/PathExtension.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		693AECC62450E4F500731AE2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				69E9FF412450A8A300B7E216 /* PathExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		69E9FEF32450788900B7E216 = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +120,7 @@
 				693AECBC2450C34E00731AE2 /* Assets.xcassets */,
 				69E9FF312450796600B7E216 /* Model */,
 				69E9FF3224507A7D00B7E216 /* View */,
-				69E9FF412450A8A300B7E216 /* PathExtension.swift */,
+				693AECC62450E4F500731AE2 /* Utilities */,
 				69E9FEFF2450788900B7E216 /* AppDelegate.swift */,
 				69E9FF012450788900B7E216 /* SceneDelegate.swift */,
 				69E9FF0A2450788B00B7E216 /* LaunchScreen.storyboard */,

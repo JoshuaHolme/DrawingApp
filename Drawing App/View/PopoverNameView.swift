@@ -5,7 +5,12 @@
 //  Created by Joshua Holme on 4/22/20.
 //  Copyright © 2020 Joshua Holme. All rights reserved.
 //
-
+/**
+- Parameters:
+    - placedShapes: An array of Shapes that have been placed on the artboard. This is bound to the array in ContentView.
+    - imageName: A string used to house the name of the image that will be used for the shape. This is used to choose which shape path to use.
+    - shapeName: A string used to house the custom name that the user enters for the shape. If the user leaves this blank, this will default to "Shape i" where i is the nuber shape that it will be.
+ */
 import SwiftUI
 
 struct PopoverNameView: View {

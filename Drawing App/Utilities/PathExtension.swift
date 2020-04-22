@@ -10,6 +10,7 @@ import Foundation
 import SwiftUI
 
 extension Path {
+    
     static var square: Path {
         var path = Path()
         

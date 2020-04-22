@@ -6,6 +6,14 @@
 //  Copyright © 2020 Joshua Holme. All rights reserved.
 //
 
+/**
+ 
+ - Parameters:
+    - placedShapes: Array used to hold all shapes that have been placed.
+    - selectedShapeID: An integer used to track the currently selected layer. Its default value is -1 as a shape will never have an ID of -1.
+    - showShapePopover: A boolean to track whether the shape popover is currently being shown
+ */
+
 import SwiftUI
 
 struct ContentView: View {

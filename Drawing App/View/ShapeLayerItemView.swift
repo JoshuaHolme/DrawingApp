@@ -6,6 +6,12 @@
 //  Copyright © 2020 Joshua Holme. All rights reserved.
 //
 
+/**
+ - Parameters:
+    - shape: A shape object that is passed in from a list. This is used to fill out the proper information to the user.
+    - placedShapes: An array of Shapes that have been placed on the artboard. This is bound to the array in ContentView.
+    - selectedShapeID: An integer that holds the id of the shape that has been selected. This will be used to track which shape to manipulate.
+ */
 import SwiftUI
 
 struct ShapeLayerItemView: View {
