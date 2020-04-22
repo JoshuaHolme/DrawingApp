@@ -9,14 +9,15 @@
 import SwiftUI
 
 struct ShapeLayerItemView: View {
+    var shape: Shape
     var body: some View {
         HStack {
-            Rectangle()
-                .fill(Color.yellow)
+            Image("\(shape.previewImageName)")
+                .resizable()
                 .aspectRatio(1, contentMode: .fit)
                 .frame(width: 50)
             Spacer()
-            Text("Shape Name")
+            Text("\(shape.name)")
             Spacer()
             Rectangle()
                 .fill(Color.green)
@@ -28,6 +29,6 @@ struct ShapeLayerItemView: View {
 
 struct ShapeLayerItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeLayerItemView()
+        ShapeLayerItemView(shape: Shape(id: 1, name: "Shape 1", previewImageName: "unselectedGlyph"))
     }
 }
