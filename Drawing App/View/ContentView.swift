@@ -24,13 +24,26 @@ struct ContentView: View {
                 Text("Artboard")
                     .foregroundColor(Color.white)
             }
-            ZStack {
-                Rectangle()
-                    .fill(Color.blue)
-                    .frame(width: 300)
-                Text("Layer Browser")
-                    .foregroundColor(Color.white)
+//            ZStack {
+//                Rectangle()
+//                    .fill(Color.blue)
+//                    .frame(width: 300)
+//                Text("Layer Browser")
+//                    .foregroundColor(Color.white)
+//            }
+            List{
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
+                ShapeLayerItemView()
             }
+            .frame(width: 300)
         }
     }
 }
