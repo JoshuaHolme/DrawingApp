@@ -44,9 +44,3 @@ struct ShapeLayerItemView: View {
         }
     }
 }
-
-//struct ShapeLayerItemView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ShapeLayerItemView(shape: Shape(id: 1, name: "Shape 1", previewImageName: "triangle", isHidden: false), placedShapes: <#Binding<[Shape]>#>)
-//    }
-//}

@@ -45,7 +45,7 @@ struct ContentView: View {
             .frame(width: 75)
             ZStack {
                 Rectangle()
-                    .fill(Color.gray)
+                    .fill(Color.init(hue: 0, saturation: 0, brightness: 0.75))
                 ForEach(placedShapes) { shape in
                     if shape.isHidden != true {
                         shape.path
