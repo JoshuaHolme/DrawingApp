@@ -16,7 +16,7 @@ struct PopoverNameView: View {
     var body: some View {
         VStack {
             Text("What would you like to name your shape?")
-            TextField("Enter shape name",text: self.$shapeName).textFieldStyle(RoundedBorderTextFieldStyle())
+            TextField("Shape \(placedShapes.count + 1)",text: self.$shapeName).textFieldStyle(RoundedBorderTextFieldStyle())
             ZStack {
                 Rectangle()
                     .frame(width: 100, height: 50)
@@ -34,19 +34,28 @@ struct PopoverNameView: View {
     }
     
     private func addShape(shape: String, name: String) {
-           
-           var path: Path
-           switch shape {
-           case "Triangle":
-               path = Path.triangle
-           case "Square":
-               path = Path.square
-           case "Circle":
-               path = Path.circle
-           default:
-               path = Path.triangle
-           }
-           
-           placedShapes.append(Shape(id: placedShapes.count, name: name, previewImageName: shape, path: path, isHidden: false))
-       }
+        
+        var path: Path
+        var layerName: String
+        
+        if name == "" {
+            layerName = "Shape \(placedShapes.count + 1)"
+        }
+        else {
+            layerName = name
+        }
+        
+        switch shape {
+        case "Triangle":
+            path = Path.triangle
+        case "Square":
+            path = Path.square
+        case "Circle":
+            path = Path.circle
+        default:
+            path = Path.triangle
+        }
+        
+        placedShapes.append(Shape(id: placedShapes.count, name: layerName, previewImageName: shape, path: path, isHidden: false))
+    }
 }
